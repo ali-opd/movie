@@ -1,0 +1,29 @@
+.heart {
+  display: inline-block;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: url('love-images.png') no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 20px;
+  width: 60px;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.heart.heart-active {
+  animation: animate 0.8s steps(28) 1;
+  background-position: right;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
